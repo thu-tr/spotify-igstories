@@ -1,0 +1,5 @@
+spotify_credentials.json
+.venv
+images/*
+.spotipy_cache
+*.png
