@@ -3,3 +3,4 @@ credentials.json
 images/*
 .spotipy_cache
 *.png
+__pycache__
