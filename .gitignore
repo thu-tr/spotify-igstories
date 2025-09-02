@@ -1,4 +1,4 @@
-spotify_credentials.json
+credentials.json
 .venv
 images/*
 .spotipy_cache

@@ -32,7 +32,7 @@ TEXT_X_OFFSET = 40
 SONG_Y_OFFSET = 20
 ARTIST_Y_OFFSET = 75
 
-OUTPUT = "images/story.png"
+OUTPUT = "images/story.jpeg"
 IMAGES_DIR = "images"
 # ----------------------------
 
