@@ -12,7 +12,7 @@ def authenticate():
     spotipy_client_id = creds["spotipy_client_id"]
     spotipy_client_secret = creds["spotipy_client_secret"]
     spotipy_redirect_uri = creds["redirect_uri"]
-    print(spotipy_client_id)
+
     auth_manager = SpotifyOAuth(client_id=spotipy_client_id, client_secret=spotipy_client_secret, redirect_uri=spotipy_redirect_uri, scope="user-top-read",
     cache_path=".spotipy_cache")
     sp = spotipy.Spotify(auth_manager=auth_manager)
@@ -21,7 +21,9 @@ def authenticate():
 #function to get the response from current user top tracks
 #return list of dict of top 5 songs, including title, artist name, local path for album cover
 #dict include "name", "artist", "image"
-def get_data(resp):
+def get_data():
+    sp = authenticate()
+    resp = sp.current_user_top_tracks(limit=5, time_range="short_term")
     result = []
     i = 1 # i is for generating file name
     for tr in resp["items"]:
@@ -47,8 +49,4 @@ def get_data(resp):
 
     return result
 
-sp = authenticate()
-top = sp.current_user_top_tracks(limit=5, time_range="short_term")
-#print(top)
-print(get_data(top))
 
