@@ -7,7 +7,7 @@ from spotipy.oauth2 import SpotifyOAuth
 # funtion authenticate reads spotify_crendetials.json to authenticate access to the api
 # return object Spotify
 def authenticate():
-    json_file = open("spotify_credentials.json", "r")
+    json_file = open("credentials.json", "r")
     creds = json.loads(json_file.read())
     spotipy_client_id = creds["spotipy_client_id"]
     spotipy_client_secret = creds["spotipy_client_secret"]
