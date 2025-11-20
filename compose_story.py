@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from datetime import date
 import os
 
 # ---------- CONFIG ----------
@@ -7,7 +8,7 @@ BG_COLOR = (11, 11, 69)  # hex #0B0B45
 PRIMARY_COLOR = (255,255,255)
 SECONDARY_COLOR = (244,241,134)
 
-TITLE_LINE1 = "last week s"
+TITLE_LINE1 = str(date.today())+ "'s"
 TITLE_LINE2 = "On repeat"
 
 FONTS = {
