@@ -12,7 +12,7 @@ TITLE_LINE1 = str(date.today())+ "'s"
 TITLE_LINE2 = "On repeat"
 
 FONTS = {
-    "line1": ("~/Library/Fonts/theseasons-reg.otf", 50),   # provide this TTF
+    "line1": ("~/Library/Fonts/Bruney Season.otf", 50),   # provide this TTF
     "line2": ("~/Library/Fonts/Burgues Script Regular.otf", 200),  # provide this TTF
     "song":  ("~/Library/Fonts/Bruney Season.otf", 38),                # fallback font
     "artist":("Arial.ttf", 32),
